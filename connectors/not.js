@@ -19,9 +19,9 @@ let minhaValidacao = idade >= 18 && possuiCNH == true && nacionalidade == 'brasi
 let possuiInformacao = possuiCNH ? 'Possui CNH' : nacionalidade === 'brasileiro' ? 'Nacionalidade' : 'Outros'
 console.log(possuiInformacao)
 
-// Imagina
-//
-let repostaDaApi = null
+// Imagine o contexto de pegar as informações do usuário no banco de dados
+// através de um endpoint na api /users/22
+let repostaDaApi = null // nao existe o codigo 22
 let users = repostaDaApi ?? 'Dados do Ususario {}' // nullish
 console.log('users', users)
 
